@@ -1,16 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap');
 
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
 body {
-display: flex;
-justify-content: center;
-align-items: center;
-height: 100vh;
-background-color: rgb(119, 104, 104);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: rgb(230, 230, 230);
+  
+}
+
+h2{
+  color: white;
 }
 
 main {
@@ -18,10 +24,11 @@ main {
   text-align: center;
   padding: 20px;
   border-radius: 25px;
-  border: solid 5px white;
+  background: linear-gradient(0deg, rgb(0, 102, 255) 32%, rgb(10, 33, 167) 100%);
   max-width: 300px;
-  height: 450px;
-  background-color: rgb(57, 133, 248);
+  height: auto;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  font-family: 'Roboto', sans-serif;
 }
 
 form {
@@ -35,10 +42,9 @@ form {
 input {
   padding: 5px;
   border-radius: 5px;
-  border: none;
+  border: solid 1px grey;
   font-size: 15px;
-  outline: none;
-}
+  }
 
 button {
   display: flex;
@@ -50,26 +56,33 @@ button {
 
 button i {
   font-size: 20px;
-  color: rgb(235, 221, 221);
+  color: rgb(255, 255, 255);
 }
 
-#content {
+#content-response {
   display: flex;
   flex-direction: column;
-   margin-top: 20px;
- 
+  margin-top: 20px;
 }
 
-#content i {
+#content-response i {
   font-size: 20px;
-  padding: 5px;
+  text-align: center;
+  padding: 10px;
+}
+
+#content-response p {
+  font-weight: 400;
+  color: rgb(41, 40, 40);
+}
+
+#content-response .hidden {
+  display: none;
 }
 
 .img-content {
   align-items: center;
- 
 }
-
 .img-content img {
   width: 80px;
 }
