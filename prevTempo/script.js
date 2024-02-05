@@ -1,4 +1,4 @@
-// chave api fac693ca9e878854d3e3d17e3fac9630
+// chave api está no meu email
 
 document.getElementById('weatherForm').addEventListener('submit', function (e) {
   e.preventDefault()
@@ -9,7 +9,7 @@ document.getElementById('weatherForm').addEventListener('submit', function (e) {
 })
 
 function getWeather(city) {
-  const apiKey = 'fac693ca9e878854d3e3d17e3fac9630'
+  const apiKey = '{chavenoemail}'
   const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`
 
   fetch(apiUrl)
