@@ -9,7 +9,7 @@ document.getElementById('weatherForm').addEventListener('submit', function (e) {
 })
 
 function getWeather(city) {
-  const apiKey = '{chavenoemail}'
+  const apiKey = 'fac693ca9e878854d3e3d17e3fac9630'
   const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`
 
   fetch(apiUrl)
