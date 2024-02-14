@@ -28,13 +28,15 @@ function getWeather(city) {
         'wind'
       ).innerText = `Velocidade do Vento: ${speedInKm.toFixed(1)} Km/h`
       //avisar se está chovendo
-      const condicaoMet = data.weather[0].main;
+      const condicaoMet = data.weather[0].main.toLocaleLowerCase();
+      const condicaoChuva = ['rain', 'drizzle', 'thunderstorm']
+      
       document.getElementById(
         'precipitation'
       ).innerText = `${condicaoMet}`
-      if (condicaoMet.toLowerCase()=== 'rain') {
+      if (condicaoChuva.includes(condicaoMet)) {
         document.getElementById('precipitation').innerText = 'Leve o guarda-chuva!';
-      };
+    }
       // A URL da imagem do ícone do clima é fornecida pela API
       const weatherIcon = document.getElementById('weatherIcon')
       weatherIcon.src = `https://openweathermap.org/img/wn/${data.weather[0].icon}.png`
