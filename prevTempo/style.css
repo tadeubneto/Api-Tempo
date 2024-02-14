@@ -63,26 +63,37 @@ button i {
   display: flex;
   flex-direction: column;
   margin-top: 20px;
+  
 }
 
 #content-response i {
   font-size: 20px;
   text-align: center;
   padding: 10px;
+  color: white;
+  
 }
 
-#content-response p {
+#content-response {
   font-weight: 400;
-  color: rgb(41, 40, 40);
+  color: rgb(255, 255, 255);  
+}
+
+#precipitation {
+  font-size: 20px;
+  font-weight: 600;
+  color: rgb(255, 255, 255);
 }
 
 #content-response .hidden {
   display: none;
 }
 
+
 .img-content {
   align-items: center;
 }
+
 .img-content img {
   width: 80px;
 }
