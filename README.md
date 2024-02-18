@@ -1,6 +1,6 @@
 # Api-Tempo
 
-<<<<<<< HEAD
+
 ![imagem da aplicação](image.png)
 
 Estou praticando a integração de API's nos projetos.
