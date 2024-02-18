@@ -2,14 +2,14 @@
 
 document.getElementById('weatherForm').addEventListener('submit', function (e) {
   e.preventDefault()
-  // preventDefault previne o comportamento padrão do formulário de RECARREGAR a página.
+// preventDefault previne o comportamento padrão do formulário de RECARREGAR a página.
 
   const city = document.getElementById('cityInput').value
   getWeather(city)
 })
 
 function getWeather(city) {
-  const apiKey = 'fac693ca9e878854d3e3d17e3fac9630'
+  const apiKey = 'CHAVEAPIESTANOMEUEMAIL'
   const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`
 
   fetch(apiUrl)
